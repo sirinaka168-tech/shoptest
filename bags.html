@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>LUXÉ HERITAGE — กระเป๋าแบรนด์เนมมือสอง ของแท้ 100%</title>
+<meta name="description" content="ร้านขายกระเป๋าแบรนด์เนมมือสอง ของแท้ 100% คัดสรรพิเศษ Chanel, Hermès, Louis Vuitton, Gucci, Dior และอีกมากมาย" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Prompt:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+  /* ============ RESET & BASE ============ */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Prompt', sans-serif;
+    background: #0a0a0a;
+    color: #f5f5f5;
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+
+  :root {
+    --bg-1: #0a0a0a;
+    --bg-2: #141414;
+    --bg-3: #1c1c1c;
+    --gold: #d4af37;
+    --gold-light: #f4d03f;
+    --gold-dark: #a8862c;
+    --text-1: #f5f5f5;
+    --text-2: #a0a0a0;
+    --text-3: #666;
+    --border: rgba(212,175,55,0.18);
+    --gold-grad: linear-gradient(135deg, #f4d03f 0%, #d4af37 40%, #b8901f 100%);
+    --gold-grad-soft: linear-gradient(135deg, rgba(244,208,63,0.18), rgba(212,175,55,0.05));
+    --shadow-gold: 0 10px 40px -10px rgba(212,175,55,0.45);
+  }
+
+  /* ============ UTILITY ============ */
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+  .gold-text {
+    background: var(--gold-grad);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+  .serif { font-family: 'Playfair Display', serif; font-weight: 700; letter-spacing: .02em; }
+  .section-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 18px;
+  }
+  .section-eyebrow::before, .section-eyebrow::after {
+    content: ''; width: 28px; height: 1px; background: var(--gold); opacity: .6;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  .section-sub {
+    color: var(--text-2);
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+  .section-head { text-align: center; margin-bottom: 64px; }
+  section { padding: 110px 0; position: relative; }
+
+  /* ============ BUTTONS ============ */
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 14px 30px;
+    font-size: 14px; font-weight: 500;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    border-radius: 2px;
+    transition: all .35s ease;
+    position: relative; overflow: hidden;
+  }
+  .btn-gold {
+    background: var(--gold-grad);
+    color: #0a0a0a;
+    box-shadow: var(--shadow-gold);
+  }
+  .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 15px 50px -10px rgba(212,175,55,.7); }
+  .btn-outline {
+    border: 1px solid var(--gold);
+    color: var(--gold);
+  }
+  .btn-outline:hover { background: var(--gold); color: #0a0a0a; }
+  .btn::after {
+    content:''; position:absolute; inset:0;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,.35), transparent);
+    transform: translateX(-100%); transition: transform .6s ease;
+  }
+  .btn:hover::after { transform: translateX(100%); }
+
+  /* ============ NAVBAR ============ */
+  .nav {
+    position: fixed; top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 22px 0;
+    transition: all .4s ease;
+  }
+  .nav.scrolled {
+    background: rgba(10,10,10,0.85);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 0;
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 3px;
+  }
+  .logo span { color: var(--gold); }
+  .nav-links {
+    display: flex; gap: 38px; list-style: none;
+  }
+  .nav-links a {
+    font-size: 14px; font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+    transition: color .3s;
+  }
+  .nav-links a::after {
+    content:''; position:absolute; left:0; bottom:-6px;
+    width:0; height:1px; background: var(--gold);
+    transition: width .3s ease;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-links a:hover::after { width: 100%; }
+  .nav-cta { display: flex; gap: 12px; align-items: center; }
+  .icon-btn {
+    width: 40px; height: 40px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: inline-flex; align-items:center; justify-content:center;
+    transition: all .3s;
+  }
+  .icon-btn:hover { background: var(--gold); color: #0a0a0a; border-color: var(--gold); }
+  .nav-cta .btn { padding: 10px 22px; font-size: 12px; }
+
+  .hamburger { display: none; font-size: 22px; color: var(--gold); }
+
+  /* ============ HERO ============ */
+  .hero {
+    min-height: 100vh;
+    padding: 140px 0 80px;
+    position: relative;
+    overflow: hidden;
+    display: flex; align-items: center;
+  }
+  .hero::before {
+    content: ''; position: absolute; inset:0;
+    background:
+      radial-gradient(circle at 20% 30%, rgba(212,175,55,0.10), transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(212,175,55,0.08), transparent 55%),
+      linear-gradient(180deg, #0a0a0a 0%, #141414 100%);
+    z-index: -1;
+  }
+  .hero::after {
+    content: ''; position: absolute;
+    right: -100px; top: -100px;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(212,175,55,.15), transparent 70%);
+    filter: blur(40px);
+    z-index: -1;
+    animation: floatLight 8s ease-in-out infinite;
+  }
+  @keyframes floatLight {
+    0%,100% { transform: translate(0,0); }
+    50% { transform: translate(-40px, 40px); }
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+    align-items: center;
+  }
+  .hero-content .section-eyebrow { margin-bottom: 28px; }
+  .hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(40px, 6.2vw, 84px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -.01em;
+    margin-bottom: 28px;
+  }
+  .hero-content h1 .italic { font-style: italic; font-weight: 400; }
+  .hero-content p.lead {
+    font-size: 18px; color: var(--text-2);
+    max-width: 520px; margin-bottom: 40px;
+  }
+  .hero-cta { display: flex; gap: 16px; margin-bottom: 56px; flex-wrap: wrap; }
+  .trust-badges {
+    display: flex; gap: 36px; flex-wrap: wrap;
+  }
+  .badge-item {
+    display: flex; align-items: center; gap: 12px;
+  }
+  .badge-item i {
+    width: 44px; height: 44px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--gold); font-size: 18px;
+    background: var(--gold-grad-soft);
+  }
+  .badge-item div { font-size: 13px; }
+  .badge-item strong { display:block; color: var(--text-1); font-weight:600; letter-spacing:.5px; }
+  .badge-item span { color: var(--text-2); font-size: 12px; }
+
+  .hero-visual {
+    position: relative;
+    height: 600px;
+  }
+  .hero-img-main {
+    position: absolute; inset: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-image: url('https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 30px 80px -20px rgba(0,0,0,.8), 0 0 0 1px rgba(212,175,55,.2) inset;
+  }
+  .hero-img-main::before {
+    content:''; position:absolute; inset:0;
+    background: linear-gradient(180deg, transparent 60%, rgba(10,10,10,.4));
+  }
+  .hero-float-card {
+    position: absolute;
+    background: rgba(20,20,20,0.85);
+    backdrop-filter: blur(14px);
+    border: 1px solid var(--border);
+    padding: 18px 22px;
+    border-radius: 4px;
+    display: flex; align-items: center; gap: 14px;
+  }
+  .hero-float-card.top {
+    top: 30px; left: -40px;
+    animation: floatY 4s ease-in-out infinite;
+  }
+  .hero-float-card.bottom {
+    bottom: 40px; right: -40px;
+    animation: floatY 4s ease-in-out infinite reverse;
+  }
+  @keyframes floatY {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+  .hero-float-card i {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--gold-grad);
+    color: #0a0a0a;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px;
+  }
+  .hero-float-card .label { font-size: 11px; color: var(--text-2); letter-spacing: 1px; text-transform: uppercase; }
+  .hero-float-card .value { font-size: 15px; font-weight: 600; color: var(--gold); }
+
+  /* ============ MARQUEE ============ */
+  .marquee-wrap {
+    background: var(--bg-2);
+    border-block: 1px solid var(--border);
+    padding: 38px 0;
+    overflow: hidden;
+  }
+  .marquee {
+    display: flex;
+    gap: 80px;
+    animation: scroll 30s linear infinite;
+    white-space: nowrap;
+  }
+  .marquee span {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    color: var(--text-3);
+    transition: color .3s;
+  }
+  .marquee span:hover { color: var(--gold); }
+  .marquee span::after {
+    content: '✦';
+    margin-left: 80px;
+    color: var(--gold);
+    font-size: 16px;
+    vertical-align: middle;
+  }
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* ============ FEATURED BAGS ============ */
+  .bags-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+  .bag-card {
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all .4s ease;
+    position: relative;
+  }
+  .bag-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+    box-shadow: 0 25px 60px -20px rgba(212,175,55,.35);
+  }
+  .bag-img-wrap {
+    position: relative;
+    aspect-ratio: 4/5;
+    overflow: hidden;
+  }
+  .bag-img-wrap img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform .8s ease;
+  }
+  .bag-card:hover .bag-img-wrap img { transform: scale(1.08); }
+  .bag-badge {
+    position: absolute; top: 16px; left: 16px;
+    background: var(--gold-grad);
+    color: #0a0a0a;
+    font-size: 11px; font-weight: 600;
+    padding: 6px 14px; letter-spacing: 1px;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+  .bag-fav {
+    position: absolute; top: 16px; right: 16px;
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: rgba(10,10,10,.7);
+    backdrop-filter: blur(8px);
+    color: var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    transition: all .3s;
+  }
+  .bag-fav:hover { background: var(--gold); color: #0a0a0a; }
+  .bag-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(10,10,10,.85));
+    display: flex; align-items: flex-end; justify-content: center;
+    padding-bottom: 24px;
+    opacity: 0; transition: opacity .4s;
+  }
+  .bag-card:hover .bag-overlay { opacity: 1; }
+  .bag-info { padding: 24px; }
+  .bag-brand {
+    font-size: 11px; letter-spacing: 3px;
+    color: var(--gold); text-transform: uppercase;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+  .bag-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px; font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .bag-meta {
+    display: flex; align-items: center; gap: 10px;
+    color: var(--text-2); font-size: 13px;
+    margin-bottom: 16px;
+  }
+  .bag-meta i { color: var(--gold); }
+  .bag-price-row {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+  .bag-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; font-weight: 700;
+    color: var(--gold);
+  }
+  .bag-price small {
+    display: block; font-size: 11px;
+    color: var(--text-3); font-family: 'Prompt'; text-decoration: line-through;
+    font-weight: 400;
+  }
+  .bag-shop-btn {
+    width: 42px; height: 42px;
+    border-radius: 50%;
+    background: var(--gold-grad);
+    color: #0a0a0a;
+    display: flex; align-items: center; justify-content: center;
+    transition: transform .3s;
+  }
+  .bag-shop-btn:hover { transform: rotate(-12deg) scale(1.1); }
+
+  /* ============ FEATURES (Why Choose Us) ============ */
+  .features-section { background: var(--bg-2); }
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+  }
+  .feature-card {
+    text-align: center;
+    padding: 44px 24px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: linear-gradient(180deg, var(--bg-3), var(--bg-2));
+    transition: all .4s;
+    position: relative;
+    overflow: hidden;
+  }
+  .feature-card::before {
+    content:''; position:absolute; top:0; left:0; right:0; height:2px;
+    background: var(--gold-grad);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform .5s ease;
+  }
+  .feature-card:hover { transform: translateY(-6px); }
+  .feature-card:hover::before { transform: scaleX(1); }
+  .feature-icon {
+    width: 72px; height: 72px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    background: var(--gold-grad-soft);
+    border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px;
+    color: var(--gold);
+    transition: all .4s;
+  }
+  .feature-card:hover .feature-icon {
+    background: var(--gold-grad);
+    color: #0a0a0a;
+    transform: rotate(-8deg);
+  }
+  .feature-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .feature-card p { font-size: 14px; color: var(--text-2); }
+
+  /* ============ CATEGORIES ============ */
+  .cat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .cat-card {
+    position: relative;
+    aspect-ratio: 3/4;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .cat-card img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform .8s ease;
+  }
+  .cat-card:hover img { transform: scale(1.1); }
+  .cat-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 30%, rgba(10,10,10,.95));
+    display: flex; flex-direction: column;
+    justify-content: flex-end;
+    padding: 32px;
+    transition: all .4s;
+  }
+  .cat-card:hover .cat-overlay { background: linear-gradient(180deg, rgba(10,10,10,.4) 0%, rgba(10,10,10,.95)); }
+  .cat-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px; font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .cat-count {
+    color: var(--gold); font-size: 13px;
+    letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  .cat-link {
+    display: inline-flex; align-items: center; gap: 10px;
+    color: var(--gold);
+    font-size: 13px; font-weight: 600;
+    letter-spacing: 1.5px; text-transform: uppercase;
+    border-top: 1px solid var(--border);
+    padding-top: 18px;
+    transition: gap .3s;
+  }
+  .cat-card:hover .cat-link { gap: 18px; }
+
+  /* ============ TESTIMONIALS ============ */
+  .testimonials-section { background: var(--bg-2); position: relative; overflow: hidden; }
+  .testimonials-section::before {
+    content:''; position:absolute;
+    top: 50%; left: 50%; transform: translate(-50%,-50%);
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(212,175,55,.08), transparent 65%);
+    pointer-events: none;
+  }
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    position: relative;
+  }
+  .review-card {
+    background: linear-gradient(180deg, var(--bg-3), #0f0f0f);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 36px 30px;
+    position: relative;
+    transition: all .4s;
+  }
+  .review-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--gold);
+    box-shadow: 0 25px 50px -20px rgba(212,175,55,.25);
+  }
+  .review-quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    color: var(--gold);
+    line-height: 1; opacity: .4;
+    position: absolute; top: 20px; right: 24px;
+  }
+  .review-stars {
+    color: var(--gold);
+    margin-bottom: 18px;
+    letter-spacing: 4px;
+  }
+  .review-text {
+    color: var(--text-1);
+    margin-bottom: 28px;
+    font-size: 15px;
+    font-style: italic;
+  }
+  .review-author {
+    display: flex; align-items: center; gap: 14px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+  .review-avatar {
+    width: 52px; height: 52px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--gold);
+  }
+  .review-avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .review-name { font-weight: 600; }
+  .review-role { font-size: 12px; color: var(--text-2); }
+
+  /* ============ ABOUT ============ */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+  }
+  .about-visual { position: relative; }
+  .about-img-1 {
+    width: 100%;
+    aspect-ratio: 4/5;
+    background: url('https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=80') center/cover;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+  }
+  .about-img-2 {
+    position: absolute;
+    bottom: -40px; right: -40px;
+    width: 55%; aspect-ratio: 1;
+    background: url('https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=500&q=80') center/cover;
+    border-radius: 6px;
+    border: 4px solid var(--bg-1);
+    box-shadow: 0 30px 60px -20px rgba(0,0,0,.8);
+  }
+  .about-badge {
+    position: absolute;
+    top: 30px; left: -30px;
+    background: var(--gold-grad);
+    color: #0a0a0a;
+    padding: 18px 22px;
+    border-radius: 4px;
+    box-shadow: var(--shadow-gold);
+    z-index: 2;
+  }
+  .about-badge strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px; line-height: 1;
+    display: block;
+  }
+  .about-badge span { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; }
+
+  .about-content h2 { margin-bottom: 24px; }
+  .about-content p {
+    color: var(--text-2);
+    margin-bottom: 20px;
+    line-height: 1.85;
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid var(--border);
+  }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .stat-label {
+    font-size: 12px;
+    color: var(--text-2);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  /* ============ CONTACT ============ */
+  .contact-section { background: var(--bg-2); }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+  .contact-info-card {
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--bg-3);
+    display: flex; gap: 18px; align-items: flex-start;
+    margin-bottom: 18px;
+    transition: all .3s;
+  }
+  .contact-info-card:hover { border-color: var(--gold); transform: translateX(6px); }
+  .contact-info-card .icon {
+    width: 54px; height: 54px; flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--gold-grad-soft);
+    border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--gold); font-size: 20px;
+  }
+  .contact-info-card h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px; margin-bottom: 4px;
+  }
+  .contact-info-card p { color: var(--text-2); font-size: 14px; }
+
+  .contact-socials { display: flex; gap: 14px; margin-top: 28px; }
+  .contact-socials a {
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--gold); font-size: 18px;
+    transition: all .3s;
+  }
+  .contact-socials a:hover {
+    background: var(--gold-grad); color: #0a0a0a;
+    border-color: var(--gold);
+    transform: translateY(-4px);
+  }
+
+  .contact-form {
+    background: var(--bg-3);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 40px;
+  }
+  .form-group { margin-bottom: 22px; }
+  .form-group label {
+    display: block;
+    font-size: 12px; letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    background: var(--bg-1);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 14px 16px;
+    color: var(--text-1);
+    font-family: inherit;
+    font-size: 15px;
+    transition: all .3s;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(212,175,55,.12);
+  }
+  .form-group textarea { resize: vertical; min-height: 120px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .contact-form .btn { width: 100%; justify-content: center; padding: 16px; }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: #050505;
+    padding: 80px 0 30px;
+    border-top: 1px solid var(--border);
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+    gap: 50px;
+    margin-bottom: 60px;
+  }
+  .footer-col h4 {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    font-size: 18px; margin-bottom: 24px;
+    letter-spacing: 1px;
+  }
+  .footer-about p { color: var(--text-2); font-size: 14px; line-height: 1.8; margin-bottom: 20px; }
+  .footer-about .logo { font-size: 22px; margin-bottom: 20px; display: inline-block; }
+  .footer-col ul { list-style: none; }
+  .footer-col li { margin-bottom: 12px; }
+  .footer-col a {
+    color: var(--text-2);
+    font-size: 14px;
+    transition: color .3s;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .footer-col a:hover { color: var(--gold); }
+  .footer-col a:hover i { transform: translateX(4px); }
+  .footer-col a i { transition: transform .3s; color: var(--gold); font-size: 10px; }
+  .footer-contact-item {
+    display: flex; gap: 14px;
+    margin-bottom: 16px;
+    color: var(--text-2);
+    font-size: 14px;
+  }
+  .footer-contact-item i { color: var(--gold); margin-top: 4px; }
+
+  .footer-bottom {
+    border-top: 1px solid var(--border);
+    padding-top: 30px;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 20px;
+  }
+  .footer-bottom p { color: var(--text-3); font-size: 13px; }
+  .payments { display: flex; gap: 14px; color: var(--text-3); font-size: 26px; }
+  .payments i { transition: color .3s; }
+  .payments i:hover { color: var(--gold); }
+
+  /* ============ SCROLL ANIMATIONS ============ */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity .9s ease, transform .9s ease;
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 1024px) {
+    .nav-links { display: none; }
+    .hamburger { display: block; }
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .hero-visual { height: 460px; order: 1; }
+    .hero-content { order: 2; }
+    .hero-content h1 { font-size: clamp(36px, 8vw, 60px); }
+    .bags-grid, .features-grid, .cat-grid, .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+    .about-grid, .contact-grid { grid-template-columns: 1fr; }
+    .about-img-2 { right: 0; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 640px) {
+    section { padding: 80px 0; }
+    .container { padding: 0 20px; }
+    .bags-grid, .features-grid, .cat-grid, .reviews-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; gap: 36px; }
+    .stats { grid-template-columns: 1fr; gap: 18px; }
+    .form-row { grid-template-columns: 1fr; }
+    .hero-float-card.top { left: 0; }
+    .hero-float-card.bottom { right: 0; }
+    .hero-cta { flex-direction: column; }
+    .hero-cta .btn { width: 100%; justify-content: center; }
+    .trust-badges { gap: 18px; }
+    .marquee span { font-size: 22px; letter-spacing: 4px; }
+    .marquee { gap: 50px; }
+    .marquee span::after { margin-left: 50px; }
+  }
+
+  /* Mobile menu drawer */
+  .mobile-menu {
+    position: fixed; top: 0; right: -100%;
+    width: 80%; max-width: 340px; height: 100vh;
+    background: var(--bg-1);
+    border-left: 1px solid var(--border);
+    padding: 100px 40px 40px;
+    z-index: 99;
+    transition: right .4s ease;
+    display: flex; flex-direction: column; gap: 24px;
+  }
+  .mobile-menu.open { right: 0; }
+  .mobile-menu a {
+    font-size: 18px; letter-spacing: 2px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border);
+  }
+  .mobile-menu a:hover { color: var(--gold); }
+
+  /* ============ MOBILE TOP BANNER (mobile-only, low-SEO) ============ */
+  .m-top-banner { display: none; }
+  @media (max-width: 768px) {
+    .m-top-banner {
+      display: block;
+      position: relative;
+      width: 100%;
+      z-index: 200;
+      background: #0a0a0a;
+      line-height: 0;
+    }
+    .m-top-banner a {
+      display: block;
+      width: 100%;
+    }
+    .m-top-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .m-top-banner-close {
+      position: absolute;
+      top: 10px; right: 10px;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: rgba(10,10,10,.7);
+      color: #f5f5f5;
+      backdrop-filter: blur(6px);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px;
+      z-index: 2;
+      cursor: pointer;
+      border: 1px solid rgba(255,255,255,.15);
+    }
+    body.has-m-banner .nav {
+      position: relative;
+    }
+  }
+
+  /* ============ BACK TO TOP ============ */
+  .back-top {
+    position: fixed;
+    bottom: 30px; right: 30px;
+    width: 50px; height: 50px;
+    background: var(--gold-grad);
+    color: #0a0a0a;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: var(--shadow-gold);
+    opacity: 0; visibility: hidden;
+    transform: translateY(20px);
+    transition: all .4s;
+    z-index: 90;
+    font-size: 18px;
+  }
+  .back-top.show { opacity: 1; visibility: visible; transform: translateY(0); }
+  .back-top:hover { transform: translateY(-4px); }
+</style>
+</head>
+<body>
+
+<template id="mobileTopBanner">
+  <aside class="m-top-banner" data-nosnippet aria-hidden="true">
+    <a href="https://example.com" rel="nofollow noopener sponsored" target="_blank">
+      <img src="https://via.placeholder.com/1200x600/d4af37/0a0a0a?text=PROMOTION" />
+    </a>
+    <button type="button" class="m-top-banner-close" aria-label="close"><i class="fa-solid fa-xmark"></i></button>
+  </aside>
+</template>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">LUXÉ <span>HERITAGE</span></a>
+    <ul class="nav-links">
+      <li><a href="#home">หน้าแรก</a></li>
+      <li><a href="#products">สินค้า</a></li>
+      <li><a href="#categories">คอลเลกชัน</a></li>
+      <li><a href="#about">เกี่ยวกับเรา</a></li>
+      <li><a href="#contact">ติดต่อ</a></li>
+    </ul>
+    <div class="nav-cta">
+      <button class="icon-btn" aria-label="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="icon-btn" aria-label="favorite"><i class="fa-regular fa-heart"></i></button>
+      <a href="#products" class="btn btn-gold">ดูสินค้า</a>
+      <button class="hamburger" id="hamburger" aria-label="menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">หน้าแรก</a>
+  <a href="#products">สินค้า</a>
+  <a href="#categories">คอลเลกชัน</a>
+  <a href="#about">เกี่ยวกับเรา</a>
+  <a href="#contact">ติดต่อ</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content reveal">
+        <div class="section-eyebrow">Authentic Pre-loved Luxury</div>
+        <h1>
+          กระเป๋า<span class="gold-text italic">แบรนด์เนม</span><br>
+          มือสอง <span class="gold-text">ของแท้</span> 100%
+        </h1>
+        <p class="lead">
+          คัดสรรกระเป๋าแบรนด์เนมหรูระดับโลก ผ่านการตรวจสอบจากผู้เชี่ยวชาญ
+          การันตีของแท้ พร้อมส่งทั่วประเทศ ในราคาที่คุณเป็นเจ้าของได้
+        </p>
+        <div class="hero-cta">
+          <a href="#products" class="btn btn-gold">เลือกซื้อสินค้า <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#categories" class="btn btn-outline">ดูคอลเลกชัน</a>
+        </div>
+        <div class="trust-badges">
+          <div class="badge-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div><strong>ของแท้ 100%</strong><span>การันตีจากผู้เชี่ยวชาญ</span></div>
+          </div>
+          <div class="badge-item">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div><strong>ส่งฟรีทั่วไทย</strong><span>EMS ส่งเร็ว ปลอดภัย</span></div>
+          </div>
+          <div class="badge-item">
+            <i class="fa-solid fa-rotate-left"></i>
+            <div><strong>คืนสินค้าได้</strong><span>ภายใน 7 วัน</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-img-main"></div>
+        <div class="hero-float-card top">
+          <i class="fa-solid fa-certificate"></i>
+          <div>
+            <div class="label">Certified</div>
+            <div class="value">Authentic Verified</div>
+          </div>
+        </div>
+        <div class="hero-float-card bottom">
+          <i class="fa-solid fa-star"></i>
+          <div>
+            <div class="label">Rating</div>
+            <div class="value">4.9 / 5.0 ★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BRAND MARQUEE ============ -->
+<div class="marquee-wrap">
+  <div class="marquee" id="marquee">
+    <span>CHANEL</span>
+    <span>HERMÈS</span>
+    <span>LOUIS VUITTON</span>
+    <span>GUCCI</span>
+    <span>DIOR</span>
+    <span>PRADA</span>
+    <span>CELINE</span>
+    <span>FENDI</span>
+    <span>BOTTEGA VENETA</span>
+    <span>SAINT LAURENT</span>
+    <span>CHANEL</span>
+    <span>HERMÈS</span>
+    <span>LOUIS VUITTON</span>
+    <span>GUCCI</span>
+    <span>DIOR</span>
+    <span>PRADA</span>
+    <span>CELINE</span>
+    <span>FENDI</span>
+    <span>BOTTEGA VENETA</span>
+    <span>SAINT LAURENT</span>
+  </div>
+</div>
+
+<!-- ============ FEATURED BAGS ============ -->
+<section id="products">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">Featured Collection</div>
+      <h2 class="section-title">สินค้า<span class="gold-text">แนะนำ</span>ประจำสัปดาห์</h2>
+      <p class="section-sub">คัดสรรกระเป๋าระดับ Iconic จากแบรนด์ที่คุณรัก ทุกใบผ่านการตรวจสอบและรับประกันของแท้ 100%</p>
+    </div>
+
+    <div class="bags-grid">
+      <!-- Bag 1 -->
+      <article class="bag-card reveal">
+        <div class="bag-img-wrap">
+          <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=700&q=80" alt="Chanel Classic Flap">
+          <span class="bag-badge">ขายดี</span>
+          <button class="bag-fav" aria-label="favorite"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="bag-info">
+          <div class="bag-brand">Chanel</div>
+          <h3 class="bag-name">Classic Flap Medium</h3>
+          <div class="bag-meta">
+            <i class="fa-solid fa-circle-check"></i> สภาพ 95% · พร้อมกล่อง · Card
+          </div>
+          <div class="bag-price-row">
+            <div class="bag-price">
+              ฿285,000
+              <small>฿320,000</small>
+            </div>
+            <a href="#" class="bag-shop-btn" aria-label="add to cart"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Bag 2 -->
+      <article class="bag-card reveal">
+        <div class="bag-img-wrap">
+          <img src="https://images.unsplash.com/photo-1564222256577-45e728f2eb71?auto=format&fit=crop&w=700&q=80" alt="Hermès Birkin">
+          <span class="bag-badge">ใหม่</span>
+          <button class="bag-fav" aria-label="favorite"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="bag-info">
+          <div class="bag-brand">Hermès</div>
+          <h3 class="bag-name">Birkin 30 Togo</h3>
+          <div class="bag-meta">
+            <i class="fa-solid fa-circle-check"></i> สภาพ Mint · Full Set · 2023
+          </div>
+          <div class="bag-price-row">
+            <div class="bag-price">
+              ฿580,000
+              <small>฿650,000</small>
+            </div>
+            <a href="#" class="bag-shop-btn" aria-label="add to cart"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Bag 3 -->
+      <article class="bag-card reveal">
+        <div class="bag-img-wrap">
+          <img src="https://images.unsplash.com/photo-1606522754091-a3bbf9ad4cb3?auto=format&fit=crop&w=700&q=80" alt="LV Neverfull">
+          <span class="bag-badge">ลด 15%</span>
+          <button class="bag-fav" aria-label="favorite"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="bag-info">
+          <div class="bag-brand">Louis Vuitton</div>
+          <h3 class="bag-name">Neverfull MM Monogram</h3>
+          <div class="bag-meta">
+            <i class="fa-solid fa-circle-check"></i> สภาพ 90% · พร้อม Pouch
+          </div>
+          <div class="bag-price-row">
+            <div class="bag-price">
+              ฿58,500
+              <small>฿69,000</small>
+            </div>
+            <a href="#" class="bag-shop-btn" aria-label="add to cart"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Bag 4 -->
+      <article class="bag-card reveal">
+        <div class="bag-img-wrap">
+          <img src="https://images.unsplash.com/photo-1591348122449-02525d70379b?auto=format&fit=crop&w=700&q=80" alt="Dior Lady">
+          <span class="bag-badge">Limited</span>
+          <button class="bag-fav" aria-label="favorite"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="bag-info">
+          <div class="bag-brand">Dior</div>
+          <h3 class="bag-name">Lady Dior Medium</h3>
+          <div class="bag-meta">
+            <i class="fa-solid fa-circle-check"></i> สภาพ 98% · Full Set
+          </div>
+          <div class="bag-price-row">
+            <div class="bag-price">
+              ฿165,000
+              <small>฿190,000</small>
+            </div>
+            <a href="#" class="bag-shop-btn" aria-label="add to cart"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Bag 5 -->
+      <article class="bag-card reveal">
+        <div class="bag-img-wrap">
+          <img src="https://images.unsplash.com/photo-1622560480654-d96214fdc887?auto=format&fit=crop&w=700&q=80" alt="Gucci Marmont">
+          <span class="bag-badge">ขายดี</span>
+          <button class="bag-fav" aria-label="favorite"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="bag-info">
+          <div class="bag-brand">Gucci</div>
+          <h3 class="bag-name">GG Marmont Matelassé</h3>
+          <div class="bag-meta">
+            <i class="fa-solid fa-circle-check"></i> สภาพ 95% · พร้อมกล่อง
+          </div>
+          <div class="bag-price-row">
+            <div class="bag-price">
+              ฿62,000
+              <small>฿75,000</small>
+            </div>
+            <a href="#" class="bag-shop-btn" aria-label="add to cart"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Bag 6 -->
+      <article class="bag-card reveal">
+        <div class="bag-img-wrap">
+          <img src="https://images.unsplash.com/photo-1601369850262-d1fd9c0a8a04?auto=format&fit=crop&w=700&q=80" alt="Prada">
+          <span class="bag-badge">ใหม่</span>
+          <button class="bag-fav" aria-label="favorite"><i class="fa-regular fa-heart"></i></button>
+        </div>
+        <div class="bag-info">
+          <div class="bag-brand">Prada</div>
+          <h3 class="bag-name">Galleria Saffiano Medium</h3>
+          <div class="bag-meta">
+            <i class="fa-solid fa-circle-check"></i> สภาพ Mint · Full Set
+          </div>
+          <div class="bag-price-row">
+            <div class="bag-price">
+              ฿95,000
+              <small>฿115,000</small>
+            </div>
+            <a href="#" class="bag-shop-btn" aria-label="add to cart"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div style="text-align:center; margin-top: 60px;" class="reveal">
+      <a href="#" class="btn btn-outline">ดูสินค้าทั้งหมด <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section class="features-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">Why Choose Us</div>
+      <h2 class="section-title">ทำไมต้อง <span class="gold-text">LUXÉ HERITAGE</span></h2>
+      <p class="section-sub">เรามุ่งมั่นมอบประสบการณ์การช้อปกระเป๋าแบรนด์เนมมือสองที่ดีที่สุดให้กับคุณ</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3>การันตีของแท้</h3>
+        <p>ทุกใบผ่านการตรวจสอบจากผู้เชี่ยวชาญ พร้อมใบรับประกัน หากไม่แท้ยินดีคืนเงิน 100%</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        <h3>ตรวจสอบโดยมืออาชีพ</h3>
+        <p>ทีม Authentication ที่มีประสบการณ์มากกว่า 10 ปี ตรวจทุกรายละเอียดอย่างละเอียด</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
+        <h3>จัดส่งทั่วประเทศ</h3>
+        <p>ส่งฟรี Kerry / EMS รับประกันการจัดส่ง พร้อมประกันสินค้าทุกรายการ</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon"><i class="fa-solid fa-star"></i></div>
+        <h3>รีวิวจริงมากกว่า 5,000+</h3>
+        <p>ลูกค้ามากมายไว้วางใจเรา ด้วยคะแนนรีวิวเฉลี่ย 4.9/5 ดาว จากผู้ซื้อตัวจริง</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATEGORIES ============ -->
+<section id="categories">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">Shop By Category</div>
+      <h2 class="section-title">เลือกซื้อตาม <span class="gold-text">คอลเลกชัน</span></h2>
+      <p class="section-sub">เลือกกระเป๋าที่ใช่สำหรับคุณ ในแบบและสไตล์ที่ต้องการ</p>
+    </div>
+    <div class="cat-grid">
+      <div class="cat-card reveal">
+        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80" alt="Top Handle">
+        <div class="cat-overlay">
+          <h3 class="cat-title">Top Handle</h3>
+          <div class="cat-count">42 รายการ</div>
+          <a href="#" class="cat-link">ดูทั้งหมด <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="cat-card reveal">
+        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80" alt="Shoulder Bag">
+        <div class="cat-overlay">
+          <h3 class="cat-title">Shoulder Bag</h3>
+          <div class="cat-count">68 รายการ</div>
+          <a href="#" class="cat-link">ดูทั้งหมด <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="cat-card reveal">
+        <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?auto=format&fit=crop&w=800&q=80" alt="Crossbody">
+        <div class="cat-overlay">
+          <h3 class="cat-title">Crossbody</h3>
+          <div class="cat-count">35 รายการ</div>
+          <a href="#" class="cat-link">ดูทั้งหมด <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">Customer Stories</div>
+      <h2 class="section-title">เสียงจาก <span class="gold-text">ลูกค้าจริง</span></h2>
+      <p class="section-sub">ความประทับใจจากลูกค้าที่เลือก LUXÉ HERITAGE เป็นจุดหมายของกระเป๋าในฝัน</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">
+          ได้กระเป๋า Chanel ตามที่ฝันมานานในราคาที่จับต้องได้ สภาพดีเกินคาด แพ็คเกจสวยมาก
+          ทางร้านอธิบายทุกรายละเอียดและส่งของไวมากค่ะ ประทับใจสุด ๆ
+        </p>
+        <div class="review-author">
+          <div class="review-avatar">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="">
+          </div>
+          <div>
+            <div class="review-name">คุณนิภาพร ส.</div>
+            <div class="review-role">กรุงเทพฯ · ลูกค้าประจำ</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">
+          ซื้อ Hermès Birkin ครั้งแรก กังวลเรื่องของแท้มาก แต่ทางร้านส่งใบ Authentication
+          ให้ครบ ตอบทุกคำถาม ของจริงสวยกว่าในรูปอีก! แนะนำเลยค่ะ
+        </p>
+        <div class="review-author">
+          <div class="review-avatar">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80" alt="">
+          </div>
+          <div>
+            <div class="review-name">คุณวิภาดา ก.</div>
+            <div class="review-role">เชียงใหม่ · VIP Member</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-quote">"</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">
+          บริการดีเยี่ยม ตอบไว ราคาเป็นมิตร ได้ Dior Lady มาในสภาพเหมือนใหม่
+          คุ้มค่ามาก ๆ ส่วนตัวซื้อกับร้านนี้ครั้งที่ 4 แล้ว ไม่ผิดหวังเลยทุกครั้งค่ะ
+        </p>
+        <div class="review-author">
+          <div class="review-avatar">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="">
+          </div>
+          <div>
+            <div class="review-name">คุณกมลทิพย์ ม.</div>
+            <div class="review-role">ภูเก็ต · Premium Buyer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="about-img-1"></div>
+        <div class="about-img-2"></div>
+        <div class="about-badge">
+          <strong>10+</strong>
+          <span>Years Experience</span>
+        </div>
+      </div>
+      <div class="about-content reveal">
+        <div class="section-eyebrow">About Us</div>
+        <h2 class="section-title">เรื่องราวของเรา<br><span class="gold-text serif italic">ความหรูที่จับต้องได้</span></h2>
+        <p>
+          LUXÉ HERITAGE ก่อตั้งขึ้นด้วยความหลงใหลในความงามของกระเป๋าแบรนด์เนมระดับโลก
+          เราเชื่อว่าทุกคนควรมีโอกาสได้สัมผัสความหรูในแบบที่ตนเลือก
+        </p>
+        <p>
+          ด้วยประสบการณ์มากกว่า 10 ปี ในวงการกระเป๋าแบรนด์เนมมือสอง
+          เราคัดสรรเฉพาะใบที่ผ่านมาตรฐานสูงสุด ทุกใบผ่านการตรวจสอบจากทีมผู้เชี่ยวชาญ
+          พร้อมใบรับประกันของแท้ทุกชิ้น เพื่อให้คุณมั่นใจในทุกการช้อป
+        </p>
+        <div class="stats">
+          <div>
+            <div class="stat-num gold-text">5,000+</div>
+            <div class="stat-label">ลูกค้าพึงพอใจ</div>
+          </div>
+          <div>
+            <div class="stat-num gold-text">1,200+</div>
+            <div class="stat-label">กระเป๋าที่ขายแล้ว</div>
+          </div>
+          <div>
+            <div class="stat-num gold-text">100%</div>
+            <div class="stat-label">การันตีของแท้</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-eyebrow">Get In Touch</div>
+      <h2 class="section-title">ติดต่อ<span class="gold-text">สอบถาม</span></h2>
+      <p class="section-sub">มีคำถามหรืออยากดูสินค้าก่อนตัดสินใจ ทักหาเราได้ทันทีทุกช่องทาง</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-info-card">
+          <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <h4>ที่อยู่หน้าร้าน</h4>
+            <p>123 ถนนสุขุมวิท แขวงคลองเตย<br>เขตคลองเตย กรุงเทพฯ 10110</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <h4>โทรศัพท์</h4>
+            <p>099-999-9999 (จันทร์-เสาร์ 10:00-19:00)</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="icon"><i class="fa-brands fa-line"></i></div>
+          <div>
+            <h4>LINE Official</h4>
+            <p>@luxeheritage (ตอบไว 24 ชั่วโมง)</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+          <div>
+            <h4>อีเมล</h4>
+            <p>contact@luxeheritage.co.th</p>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Line"><i class="fa-brands fa-line"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>ชื่อของคุณ</label>
+            <input type="text" name="name" placeholder="กรอกชื่อ-นามสกุล" required>
+          </div>
+          <div class="form-group">
+            <label>เบอร์โทรศัพท์</label>
+            <input type="tel" name="phone" placeholder="08X-XXX-XXXX" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>อีเมล</label>
+          <input type="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label>สนใจกระเป๋า / ข้อความ</label>
+          <textarea name="message" placeholder="บอกความต้องการของคุณ เช่น แบรนด์ที่สนใจ งบประมาณ..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold">
+          ส่งข้อความ <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-about">
+        <a href="#home" class="logo">LUXÉ <span>HERITAGE</span></a>
+        <p>
+          ร้านกระเป๋าแบรนด์เนมมือสองของแท้ คัดสรรพิเศษโดยทีมผู้เชี่ยวชาญ
+          ส่งมอบความหรูในราคาที่จับต้องได้ มากกว่า 10 ปีที่ลูกค้าไว้วางใจ
+        </p>
+        <div class="contact-socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Line"><i class="fa-brands fa-line"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>เมนู</h4>
+        <ul>
+          <li><a href="#home"><i class="fa-solid fa-chevron-right"></i>หน้าแรก</a></li>
+          <li><a href="#products"><i class="fa-solid fa-chevron-right"></i>สินค้า</a></li>
+          <li><a href="#categories"><i class="fa-solid fa-chevron-right"></i>คอลเลกชัน</a></li>
+          <li><a href="#about"><i class="fa-solid fa-chevron-right"></i>เกี่ยวกับเรา</a></li>
+          <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i>ติดต่อ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>บริการลูกค้า</h4>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-chevron-right"></i>วิธีสั่งซื้อ</a></li>
+          <li><a href="#"><i class="fa-solid fa-chevron-right"></i>การจัดส่ง</a></li>
+          <li><a href="#"><i class="fa-solid fa-chevron-right"></i>นโยบายคืนสินค้า</a></li>
+          <li><a href="#"><i class="fa-solid fa-chevron-right"></i>การรับประกัน</a></li>
+          <li><a href="#"><i class="fa-solid fa-chevron-right"></i>คำถามที่พบบ่อย</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>ติดต่อเรา</h4>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>123 ถนนสุขุมวิท เขตคลองเตย<br>กรุงเทพฯ 10110</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <span>099-999-9999</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-regular fa-envelope"></i>
+          <span>contact@luxeheritage.co.th</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fa-solid fa-clock"></i>
+          <span>จันทร์-เสาร์ 10:00 - 19:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 LUXÉ HERITAGE. All Rights Reserved. Designed with <i class="fa-solid fa-heart" style="color:var(--gold)"></i> for luxury lovers.</p>
+      <div class="payments">
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-jcb"></i>
+        <i class="fa-brands fa-cc-amex"></i>
+        <i class="fa-solid fa-money-bill-transfer"></i>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script>
+  // ============ Mobile-only top banner (gated from Google bots) ============
+  (function () {
+    // Gate 1: viewport — show only on mobile widths
+    if (window.innerWidth > 768) return;
+
+    // Gate 2: user-agent — skip Google Search / Ads / AdSense / Inspection bots,
+    // and common crawlers, so the banner does not appear in their render of the page.
+    const ua = navigator.userAgent || '';
+    const botPattern = /Googlebot|AdsBot-Google|AdsBot-Google-Mobile|Mediapartners-Google|Google-InspectionTool|Storebot-Google|APIs-Google|FeedFetcher-Google|Google-Read-Aloud|DuplexWeb-Google|Googlebot-Image|Googlebot-Video|Googlebot-News|bingbot|adidxbot|YandexBot|Baiduspider|DuckDuckBot|facebookexternalhit|Twitterbot|LinkedInBot|Slackbot|crawler|spider|HeadlessChrome|Lighthouse|PageSpeed/i;
+    if (botPattern.test(ua)) return;
+
+    // Gate 3: navigator.webdriver — skip automated browsers (some audit tools)
+    if (navigator.webdriver) return;
+
+    const tpl = document.getElementById('mobileTopBanner');
+    if (!tpl) return;
+    const node = tpl.content.cloneNode(true);
+    document.body.prepend(node);
+    document.body.classList.add('has-m-banner');
+    const closeBtn = document.querySelector('.m-top-banner-close');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const b = document.querySelector('.m-top-banner');
+        if (b) b.remove();
+        document.body.classList.remove('has-m-banner');
+      });
+    }
+  })();
+
+  // ============ Navbar scroll effect ============
+  const nav = document.getElementById('nav');
+  const backTop = document.getElementById('backTop');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+    if (window.scrollY > 500) backTop.classList.add('show');
+    else backTop.classList.remove('show');
+  });
+
+  // ============ Mobile menu ============
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+    const icon = hamburger.querySelector('i');
+    icon.classList.toggle('fa-bars');
+    icon.classList.toggle('fa-xmark');
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.querySelector('i').classList.remove('fa-xmark');
+      hamburger.querySelector('i').classList.add('fa-bars');
+    });
+  });
+
+  // ============ Back to top ============
+  backTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // ============ Scroll reveal ============
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // ============ Favorite toggle ============
+  document.querySelectorAll('.bag-fav').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const i = btn.querySelector('i');
+      i.classList.toggle('fa-regular');
+      i.classList.toggle('fa-solid');
+      btn.style.color = i.classList.contains('fa-solid') ? '#0a0a0a' : '';
+      btn.style.background = i.classList.contains('fa-solid') ? '#d4af37' : '';
+    });
+  });
+
+  // ============ Contact form ============
+  const form = document.getElementById('contactForm');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const data = new FormData(form);
+    alert(
+      'ขอบคุณค่ะคุณ ' + data.get('name') + '\n\n' +
+      'เราได้รับข้อความของคุณเรียบร้อยแล้ว\n' +
+      'ทีมงานจะติดต่อกลับภายใน 24 ชั่วโมง\n\n' +
+      '*หมายเหตุ: นี่เป็น demo form กรุณาเชื่อมต่อ backend จริงก่อนใช้งาน'
+    );
+    form.reset();
+  });
+
+  // ============ Smooth scroll for hash links ============
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', (e) => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const top = target.getBoundingClientRect().top + window.pageYOffset - 70;
+        window.scrollTo({ top, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // ============ Animated stats counter ============
+  const counters = document.querySelectorAll('.stat-num');
+  const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const el = e.target;
+        const raw = el.textContent.trim();
+        const isPercent = raw.includes('%');
+        const hasPlus = raw.includes('+');
+        const target = parseInt(raw.replace(/[^\d]/g, ''), 10);
+        let current = 0;
+        const step = Math.max(1, Math.floor(target / 50));
+        const interval = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            current = target;
+            clearInterval(interval);
+          }
+          el.textContent = current.toLocaleString('en-US') + (hasPlus ? '+' : '') + (isPercent ? '%' : '');
+        }, 25);
+        counterObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.4 });
+  counters.forEach(c => counterObserver.observe(c));
+</script>
+</body>
+</html>
